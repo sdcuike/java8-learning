@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+	                         http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.doctor</groupId>
+        <artifactId>maven-parent-doctor</artifactId>
+        <version>2</version>
+    </parent>
+
+    <artifactId>java8-learning</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <name>${project.artifactId}</name>
+
+    <description></description>
+
+    <inceptionYear>2016-6</inceptionYear>
+
+    <properties>
+
+    </properties>
+
+
+    <repositories>
+        <repository>
+            <id>doctorwho-maven-repo</id>
+            <url>https://raw.githubusercontent.com/sdcuike/maven-repo/master/repositories/releases</url>
+        </repository>
+        <repository>
+            <id>doctorwho-maven-repo-s</id>
+            <url>https://raw.githubusercontent.com/sdcuike/maven-repo/master/repositories/snapshots</url>
+        </repository>
+    </repositories>
+
+</project>
