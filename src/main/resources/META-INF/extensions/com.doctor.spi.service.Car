@@ -1,0 +1,2 @@
+racingCar=com.doctor.spi.service.impl.RacingCar
+sportCar=com.doctor.spi.service.impl.SportCar
