@@ -13,4 +13,5 @@ import com.alibaba.cooma.Extension;
 @Extension
 public interface Car {
     void run();
+
 }
