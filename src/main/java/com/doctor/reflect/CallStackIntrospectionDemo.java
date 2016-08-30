@@ -65,6 +65,7 @@ public class CallStackIntrospectionDemo {
             StringWriter out = new StringWriter();
             PrintWriter writer = new PrintWriter(out);
             throwable.printStackTrace(writer);
+            writer.flush();
             log(message + out.toString(), throwable.getStackTrace()[0]);
         }
 
