@@ -64,8 +64,10 @@ public class CallStackIntrospectionDemo {
         public void logProblem(String message, Throwable throwable) {
             StringWriter out = new StringWriter();
             PrintWriter writer = new PrintWriter(out);
+            writer.println();
             throwable.printStackTrace(writer);
             writer.flush();
+            writer.close();
             log(message + out.toString(), throwable.getStackTrace()[0]);
         }
 
