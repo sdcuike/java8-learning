@@ -29,9 +29,10 @@ public final class SynchronizedKeyWord {
         System.out.println("method:" + Thread.holdsLock(SynchronizedKeyWord.class));
     }
 
-    public static synchronized void method5() {
-        System.out.println("method:" + Thread.holdsLock(SynchronizedKeyWord.class));
-
+    public static void method5() {
+        synchronized (SynchronizedKeyWord.class) {
+            System.out.println("method:" + Thread.holdsLock(SynchronizedKeyWord.class));
+        }
     }
 
 }
