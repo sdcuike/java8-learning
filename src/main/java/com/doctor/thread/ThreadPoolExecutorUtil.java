@@ -9,6 +9,9 @@ import java.util.concurrent.ThreadPoolExecutor;
  */
 public final class ThreadPoolExecutorUtil {
 
+    public static void main(String[] args) {
+        System.out.println(Math.abs( "cbs_hermes-deliver_devices-push-common-consumer-group".hashCode())%50);
+    }
     public static ThreadPoolExecutorInfo getInfo(ThreadPoolExecutor threadPoolExecutor) {
         ThreadPoolExecutorInfo threadPoolExecutorInfo = new ThreadPoolExecutorInfo();
         threadPoolExecutorInfo.activeCount = threadPoolExecutor.getActiveCount();
