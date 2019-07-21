@@ -20,18 +20,18 @@ public final class SynchronizedKeyWord {
 
     public void method2() {
         synchronized (this) {
-            System.out.println("method:" + Thread.holdsLock(this));
+            System.out.println("method2:" + Thread.holdsLock(this));
         }
     }
 
 
     public static synchronized void method3() {
-        System.out.println("method:" + Thread.holdsLock(SynchronizedKeyWord.class));
+        System.out.println("method3:" + Thread.holdsLock(SynchronizedKeyWord.class));
     }
 
     public static void method5() {
         synchronized (SynchronizedKeyWord.class) {
-            System.out.println("method:" + Thread.holdsLock(SynchronizedKeyWord.class));
+            System.out.println("method5:" + Thread.holdsLock(SynchronizedKeyWord.class));
         }
     }
 
