@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * 编码规则：创建线程池指定有意义的名称，方便出错时回溯。
  *
- * @author cuikexiang
+ * @author sdcuike
  * @date 2019-07-20
  */
 public class ThreadFactory {
